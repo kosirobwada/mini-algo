@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MiniAlgo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        MiniAlgo
+      </div>
+      <ul class="header-menus">
+        <li>問題一覧</li>
+        <li>新規登録</li>
+        <li>ランキング</li>
+        <li>ログイン</li>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
