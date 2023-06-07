@@ -115,10 +115,13 @@ header {
 
 /* box top ================================ */
 .box-top {
-  background-color: #9ae0d0;
+  /*background-color: #9ae0d0;*/
+  background-color: #589e97;
   position: absolute;
   padding: 40px;
-  margin: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
   height: 89%;
   top: 50%;
@@ -126,8 +129,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-
-.centered-text {
+.top-centered-text {
   text-align: center;
   color: white;
   font-size: 24px;
@@ -137,12 +139,20 @@ header {
   list-style: none;
   text-align: center;
   color: white;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .intro-text li {
   margin-bottom: 20px;
 }
+
+.top-centered-image {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* フラッシュ ================================ */
 .flash {
