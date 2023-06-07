@@ -12,13 +12,13 @@
   <body>
     <header>
       <div class="header-logo">
-        MiniAlgo
+        <%= link_to "MiniAlgo", "../" %>
       </div>
       <ul class="header-menus">
-        <li>問題一覧</li>
-        <li>新規登録</li>
-        <li>ランキング</li>
-        <li>ログイン</li>
+        <li><%= link_to "問題一覧", "/probrem" %></li>
+        <li><%= link_to "新規登録", "/probrem" %></li>
+        <li><%= link_to "ランキング", "/ranking" %></li>
+        <li><%= link_to "ログイン", "/ranking" %></li>
       </ul>
     </header>
     <%= yield %>
