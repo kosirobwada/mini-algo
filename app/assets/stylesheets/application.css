@@ -153,6 +153,46 @@ header {
   margin-right: auto;
 }
 
+/* 新規登録 ================================ */
+
+.main.users-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: -100px auto 0;
+  padding: 20px;
+}
+
+.main.users-new .form.users-form .form-body input[type="submit"] {
+  background-color: #589e97;
+  color: white;
+  text-align: center;
+  margin-left: 33px;
+  margin-right: auto;
+  width: 100px;
+  height: 40px;
+}
+
+.submit-button {
+  background-color: #589e97;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+}
+
+.login-button {
+  background-color: #589e97;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+}
+
+
 
 /* フラッシュ ================================ */
 .flash {

@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  get "users" => "users#index"
   get "/" => "home#top"
-  get "/probrem" => "home#probrem"
-  get "/ranking" => "home#ranking"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "probrem" => "home#probrem"
+  get "ranking" => "home#ranking"
+  get "signup" => "users#new"
+  post "users/create" => "users#create"
+  get "login" => "users#login_form"
+  post "login" => "users#login"
 end
