@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Relationship Count</title>
+</head>
+<body>
+  <h1>User Relationship Count</h1>
+  <table>
+    <tr>
+      <th>User ID</th>
+      <th>Relationship Count</th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.relationships.count %></td>
+      </tr>
+    <% end %>
+  </table>
+</body>
+</html>

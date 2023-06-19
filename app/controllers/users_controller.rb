@@ -20,6 +20,9 @@ class UsersController < ApplicationController
   end
   def login_form
   end
+  def ranking
+    @users = User.all
+  end
   def login
     @user = User.find_by(email: params[:email],password: params[:password])
     if @user
