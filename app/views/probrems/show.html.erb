@@ -3,7 +3,7 @@
     <div class="probrems-show-item">
       <p>
         <%= @probrem.content %>
-        <%= link_to("解けた！", "..", class: "prebrem-solve-button") %>
+        <%= button_to('解けた！', relationships_path(probrem_id: @probrem.id), method: :post, class: 'prebrem-solve-button') %>
       </p>
     </div>
   </div>

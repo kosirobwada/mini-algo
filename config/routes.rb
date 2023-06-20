@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get "probrems/index" => "probrems#index"
   get "probrems/:id" => "probrems#show"
+  post "relationships" => "relationships#create"
+  get "relationships" => "probrems#index"
   get "users" => "users#index"
   get "/" => "home#top"
   get "probrem" => "home#probrem"
