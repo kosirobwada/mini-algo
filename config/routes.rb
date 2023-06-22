@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get "probrems/index" => "probrems#index"
-  get "probrems/:id" => "probrems#show"
+  resources :probrems, only: %i[index show]
   post "relationships" => "relationships#create"
+  post "destroy_relationships" => "relationships#destroy"
   get "relationships" => "probrems#index"
   get "users" => "users#index"
   get "/" => "home#top"
-  get "probrem" => "home#probrem"
   get "ranking" => "home#ranking"
   get "signup" => "users#new"
   post "users/create" => "users#create"

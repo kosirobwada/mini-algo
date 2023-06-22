@@ -3,7 +3,11 @@
     <div class="probrems-show-item">
       <p>
         <%= @probrem.content %>
-        <%= button_to('解けた！', relationships_path(probrem_id: @probrem.id), method: :post, class: 'prebrem-solve-button') %>
+        <% if @solved_probrem_id.include?(@probrem.id) %>
+          <%= button_to('解けてない！', destroy_relationships_path(probrem_id: @probrem.id), method: :post, class: 'prebrem-solve-button') %>
+        <% else %>
+          <%= button_to('解けた！', relationships_path(probrem_id: @probrem.id), method: :post, class: 'prebrem-solve-button') %>
+        <% end %>
       </p>
     </div>
   </div>

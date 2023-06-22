@@ -1,14 +1,11 @@
-<header>
-  <div class="header-logo">
-    <a href="/">MiniAlgo</a>
-  </div>
-</header>
-
 <div class="main probrems-index">
   <div class="container">
     <% @probrems.each do |probrem| %>
       <div class="probrems-index-item">
         <%= link_to(probrem.content, "/probrems/#{probrem.id}") %>
+        <% if @solved_probrem_id.include?(probrem.id) %>
+          ✔
+        <% end %>
       </div>
     <% end %>
   </div>

@@ -12,8 +12,12 @@
     </tr>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.id %></td>
-        <td><%= user.relationships.count %></td>
+        <% if @current_user.id == user.id %>
+          <td style="color: red"><%= user.email %></td>
+        <% else %>
+          <td style="color: black;"><%= user.email %></td>
+        <% end %>
+        <td><%= user.relationships.size %></td>
       </tr>
     <% end %>
   </table>
